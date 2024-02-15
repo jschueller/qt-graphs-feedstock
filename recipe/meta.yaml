@@ -14,9 +14,6 @@ build:
   run_exports:
     - {{ pin_subpackage('qt6-graphs', max_pin='x.x') }}
 
-  # needs osx sdk 12.3, to fix once rendered in the feedstock through build_config.yaml
-  skip: true  # [osx]
-
 requirements:
   build:
     - cmake
